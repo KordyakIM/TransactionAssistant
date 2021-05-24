@@ -1,6 +1,8 @@
 # MobileAssistant
 Это мобильный помощник в работе с сервисом Мобильный Банк от Сбербанка. Программа помогает выполнять перевод средств по номеру телефона, карты (указываете весь номер карты получателя). Пополнять баланс телефона, как своего номера, так и получателя. Запрашивать баланс карт и мини-выписку. Узнавать количество баллов по программе Спасибо.
 
-![MobileAssistant_01](https://user-images.githubusercontent.com/30699602/106387034-70cf0c80-640a-11eb-9fa0-1c7b4531ac66.jpg)
-![MobileAssistant_02](https://user-images.githubusercontent.com/30699602/106387058-82b0af80-640a-11eb-8e69-9123bd4f41f4.jpg)
-![MobileAssistant_03](https://user-images.githubusercontent.com/30699602/106387139-e9ce6400-640a-11eb-813c-66ea85e14610.jpg)
+![АссистентТранзакций(описание)](https://user-images.githubusercontent.com/30699602/119292080-e260ee00-bc79-11eb-93a5-f718fd9fb230.jpg)
+![АссистентТранзакций_скриншоты для смартфона_01](https://user-images.githubusercontent.com/30699602/119292125-f60c5480-bc79-11eb-985c-0d8948293358.jpg)
+![АссистентТранзакций_скриншоты для смартфона_02](https://user-images.githubusercontent.com/30699602/119292127-f6a4eb00-bc79-11eb-9bad-fcb9296cab40.jpg)
+![АссистентТранзакций_скриншоты для смартфона_03](https://user-images.githubusercontent.com/30699602/119292129-f73d8180-bc79-11eb-895e-3c82473bfc81.jpg)
+![АссистентТранзакций_скриншоты для смартфона_04](https://user-images.githubusercontent.com/30699602/119292131-f73d8180-bc79-11eb-9745-24e8d09c13ae.jpg)
