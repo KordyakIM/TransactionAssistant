@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ru.project.TransactionAssistant.MainActivity">
+        <item
+            android:id="@+id/item_favorite"
+            android:icon="@drawable/ic_favorite_offline_tab"
+            android:title="@string/title_activity_about_program"
+            app:showAsAction="always"></item>
+        <item
+            android:id="@+id/item_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/title_activity_set"
+            app:showAsAction="always"></item>
+        <item
+            android:id="@+id/item_info_aboute"
+            android:icon="@drawable/ic_info_about"
+            android:title="@string/title_activity_about_program"
+            app:showAsAction="always"></item>
+</menu>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">TransactionAssistant</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Закрыть</string>
+    <string name="no">Нет</string>
+    <string name="yes">Да</string>
+    <string name="add">Применить</string>
+    <string name="forward">Перейти</string>
+    <string name="settings">Настройки</string>
+    <string name="update">Обновить</string>
+    <string name="about">Ассистент мобильных транзакций, версия 1.0 \n
+        \n
+        Программа поможет Вам выполнять перевод средств по номеру телефона, карты (указываете весь номер карты получателя).
+        Пополнять баланс телефона, как своего номера, так и получателя. Запрашивать баланс карт и мини-выписку.
+        Прошу учитывайте ограничение, не больше 20-ти раз за сутки.</string>
+    <string name="title_activity_set">Настройки уведомления</string>
+    <string name="title_activity_favorite">Избранные транзакции</string>
+    <string name="title_activity_about_program">О программе</string>
+    <string name="ic_delete">Удалить запись</string>
+    <string name="ic_pin">Закрепить</string>
+    <string name="ic_template">Добавить запись</string>
+    <string name="Label">Ассистент Транзакций</string>
+    <string name="dialog_info_transfer">Для перевода денег по номеру телефона, в первой строке укажите мобильный номер контакта получателя.
+        Если Вы хотите перевести деньги по номеру карты, укажите в строке номер карты целиком.
+        Во второй строке, укажите сумму перевода в рублях. В строке Комментарий можете написать сопроводительный текс перевода.
+        Далее нажимаете кнопку Отправить SMS.</string>
+    <string name="dialog_info_phone">Для поплнения баланса мобильного телефона, в первой строке укажите мобильный номер контакта получателя. Во второй строке, укажите сумму перевода в рублях.</string>
+    <string name="dialog_info_balance">Укажите в строке последние четыре цифры Вашей карты, привязанной к мобильному банку и нажмите кнопку Отправить SMS.
+                    Вы можете оставить строку пустой и отправить запрос, Вам придет отчет по всем картам привязанным к сервису Мобильный банк.</string>
+    <string name="dialog_info_history">Укажите в строке последние четыре цифры Вашей карты или воспользуйтесь списком карт.</string>
+    <string name="dialog_info_thank">Укажите в строке последние четыре цифры Вашей карты или воспользуйтесь списком карт.</string>
+    <string name="delete">Delete</string>
+</resources>

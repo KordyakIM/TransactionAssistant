@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:animateLayoutChanges="true"
+    android:contextClickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    tools:context="ru.project.TransactionAssistant.MainActivity">
+    <TextView
+        android:id="@+id/text_adapter_delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="2dp" />
+    <Button
+        android:id="@+id/button_adapter_delete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="center|end"
+        android:background="@drawable/selector_my_btn_check_material_anim_copy" />
+</LinearLayout>

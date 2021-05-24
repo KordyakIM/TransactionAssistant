@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    tools:context="ru.project.TransactionAssistant.MainActivity">
+
+    <ImageView
+        android:id="@+id/ic_rubl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="261dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:paddingVertical="10dp"
+        android:paddingLeft="4dp"
+        android:src="@drawable/ic_rubl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/dropdown"
+        style="@style/AppSpinnerDropDownItem"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="70dp"
+        android:paddingLeft="10dp"
+        android:spinnerMode="dropdown"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text_transfer"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_text"
+        android:hint="Укажите мобильный или карту..."
+        android:inputType="number"
+        android:paddingRight="60dp"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropdown" />
+
+    <TextView
+        android:id="@+id/text_transfer_contact"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/text_contact_selector"
+        android:backgroundTint="#2749C033"
+        android:hint="Наименование контакта..."
+        android:paddingRight="50dp"
+        android:textSize="17dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_transfer" />
+
+    <TextView
+        android:id="@+id/text_transfer_contact_number"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/text_contact_number_selector"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_transfer" />
+
+    <EditText
+        android:id="@+id/text_phone"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_text"
+        android:hint="Номер мобильного..."
+        android:inputType="number"
+        android:paddingRight="60dp"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropdown" />
+
+    <TextView
+        android:id="@+id/text_phone_contact"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/text_contact_selector"
+        android:backgroundTint="#2749C033"
+        android:hint="Наименование контакта..."
+        android:paddingRight="50dp"
+        android:textSize="17dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_phone" />
+
+    <TextView
+        android:id="@+id/text_phone_contact_number"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/text_contact_number_selector"
+        android:textSize="17dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_transfer" />
+
+    <EditText
+        android:id="@+id/text_balance"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_text"
+        android:hint="Последние 4 цфиры карты..."
+        android:inputType="number"
+        android:paddingRight="60dp"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropdown" />
+
+    <EditText
+        android:id="@+id/text_history"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_text"
+        android:hint="Последние 4 цфиры карты..."
+        android:inputType="number"
+        android:paddingRight="60dp"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropdown" />
+
+    <EditText
+        android:id="@+id/text_thank"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_text"
+        android:hint="Последние 4 цфиры карты..."
+        android:inputType="number"
+        android:paddingRight="60dp"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropdown" />
+
+    <EditText
+        android:id="@+id/money_transfer"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_text"
+        android:ems="10"
+        android:hint="Сумма..."
+        android:inputType="number"
+        android:paddingRight="60dp"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_transfer_contact" />
+
+    <EditText
+        android:id="@+id/text_transfer_comment"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_text"
+        android:ems="10"
+        android:hint="Комментарий к переводу..."
+        android:paddingRight="35dp"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/money_transfer" />
+
+    <EditText
+        android:id="@+id/money_phone"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/selector_text"
+        android:ems="10"
+        android:hint="Сумма..."
+        android:inputType="number"
+        android:paddingRight="60dp"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_phone_contact" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="264dp"
+        android:background="@drawable/selector_button"
+        android:onClick="onButtonSend"
+        android:text="Отправить SMS"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dropdown" />
+
+    <Button
+        android:id="@+id/contact"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/ic_contact_empty"
+        android:onClick="onButtonContact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/info_dropdown"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/selector_info"
+        android:onClick="onButtonInfo_dropdown"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/card"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="139dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/ic_card_empty"
+        android:onClick="onButtonCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clear_money_transfer"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="266dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/selector_clear"
+        android:onClick="onButtonClear_clear_money_transfer"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clear_money_phone"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="266dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/selector_clear"
+        android:onClick="onButtonClear_clear_money_phone"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clear_text_comment"
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/selector_clear"
+        android:onClick="onButtonClear_clear_text_comment"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clear_text_transfer"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="140dp"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/selector_clear"
+        android:onClick="onButtonClear_clear_text_transfer"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/card"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clear_text_phone"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="140dp"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/selector_clear"
+        android:onClick="onButtonClear_clear_text_phone"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/card"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clear_text_balance"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="140dp"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/selector_clear"
+        android:onClick="onButtonClear_clear_text_balance"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/card"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clear_text_history"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="140dp"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/selector_clear"
+        android:onClick="onButtonClear_clear_text_history"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/card"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/clear_text_thank"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="140dp"
+        android:background="@android:color/transparent"
+        android:drawableBottom="@drawable/selector_clear"
+        android:onClick="onButtonClear_clear_text_thank"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/card"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/output_transfer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/selector_output"
+        android:scrollbars="vertical"
+        android:choiceMode="singleChoice"
+        android:focusable="true"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send" />
+
+    <ListView
+        android:id="@+id/output_phone"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/selector_output"
+        android:scrollbars="vertical"
+        android:choiceMode="singleChoice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send" />
+
+    <ListView
+        android:id="@+id/output_balance"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/selector_output"
+        android:scrollbars="vertical"
+        android:choiceMode="singleChoice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send" />
+
+    <ListView
+        android:id="@+id/output_history"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/selector_output"
+        android:scrollbars="vertical"
+        android:choiceMode="singleChoice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send" />
+
+    <ListView
+        android:id="@+id/output_thank"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbars="vertical"
+        android:choiceMode="singleChoice"
+        android:background="@drawable/selector_output"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
